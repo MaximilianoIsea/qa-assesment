@@ -1,0 +1,42 @@
+# =============================================================================
+# E2E Test Pipeline — Starter Workflow
+# =============================================================================
+# This is a starting point. You are expected to modify, extend, or replace
+# this file to meet the CI/CD requirements described in the README.
+#
+# Requirements:
+#   - Trigger on push to main and on pull requests
+#   - Install dependencies and run the full E2E test suite
+#   - Upload test artifacts (screenshots, reports, videos)
+#
+# Tips:
+#   - Playwright: https://playwright.dev/docs/ci#github-actions
+#   - Cypress: https://docs.cypress.io/guides/continuous-integration/github-actions
+# =============================================================================
+
+name: E2E Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # TODO: Set up Node.js (specify a version)
+
+      # TODO: Install dependencies (consider caching for speed)
+
+      # TODO: Install browsers if using Playwright
+
+      # TODO: Run your test suite
+
+      # TODO: Upload test artifacts (reports, screenshots, videos)
+      #        Use actions/upload-artifact@v4

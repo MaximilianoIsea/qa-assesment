@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Test results and reports
+test-results/
+playwright-report/
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+allure-results/
+allure-report/
+mochawesome-report/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Build
+dist/
+build/
